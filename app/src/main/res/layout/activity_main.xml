@@ -1,7 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="426dp"
+        android:layout_height="wrap_content"
+        android:background="#C13B3B"
+        android:padding="8dp"
+        android:text="@string/textView_Title"
+        android:textColor="#E1BEE7"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/addCardButton"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:text="@string/addCardButton_Text"
+        android:onClick="sendMessage"/>
+
+    <ListView
+        android:id="@+id/cardListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

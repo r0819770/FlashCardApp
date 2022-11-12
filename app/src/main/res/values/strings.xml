@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FlashCardApp</string>
+    <string name="textView_Title">Title</string>
+    <string name="addCardButton_onClick">click</string>
+    <string name="addCardButton_Text">Add Card</string>
 </resources>
