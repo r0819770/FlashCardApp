@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReviewActivity">
+
+    <TextView
+        android:id="@+id/reviewFrontTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="@string/reviewFrontTextView_Text"
+        android:textSize="48sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/reviewBackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:text="@string/reviewBackTextView_Text"
+        android:textSize="48sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/stopReviewButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text="@string/stopReviewButton_Text"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/showBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:text="@string/showBackButton_Text"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/reviewNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:text="@string/reviewNextButton_Text"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

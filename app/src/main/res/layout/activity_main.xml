@@ -1,31 +1,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/local"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="426dp"
-        android:layout_height="wrap_content"
-        android:background="#C13B3B"
-        android:padding="8dp"
-        android:text="@string/textView_Title"
-        android:textColor="#E1BEE7"
-        android:textSize="34sp" />
-
-    <Button
-        android:id="@+id/addCardButton"
-        android:layout_width="50dp"
-        android:layout_height="55dp"
-        android:text="@string/addCardButton_Text"
-        android:onClick="sendMessage"/>
-
-    <ListView
-        android:id="@+id/cardListView"
+        android:id="@+id/DeckListTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:background="#FF3333"
+        android:padding="12dp"
+        android:text="@string/DeckListTitle_Title"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/addDeckButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="50"
+            android:background="#FF6C6B6B"
+            android:text="@string/addDeckButton_Text"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/addDeckInputText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:ems="10"
+            android:hint="@string/addDeckInputText_HintText"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/editDeckInputText"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="611dp"
+        android:layout_weight="0">
+
+        <ListView
+            android:id="@+id/deckListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

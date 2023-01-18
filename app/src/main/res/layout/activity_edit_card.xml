@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCardActivity">
+
+    <TextView
+        android:id="@+id/frontTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:text="@string/frontTextView_Text"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editFrontTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="10"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editFrontTextInput_Text"
+        android:textSize="24sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/backTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:text="@string/backTextView_Text"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editBackTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="10"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/editBackTextInput_Text"
+        android:textSize="24sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/editCardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_weight="5"
+        android:text="@string/editCardButton_Text"
+        android:translationY="40dp" />
+
+    <Button
+        android:id="@+id/deleteCardButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_weight="5"
+        android:text="@string/deleteCardButton_Text" />
+
+</LinearLayout>

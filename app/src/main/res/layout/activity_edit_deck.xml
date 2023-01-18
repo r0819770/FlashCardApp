@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCardActivity">
+
+    <TextView
+        android:id="@+id/deckTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:text="@string/deckTextView_Text"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editDeckTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_weight="10"
+        android:inputType="textPersonName"
+        android:text="@string/editDeckTextInput_Text"
+        android:textSize="24sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/editDeckButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_weight="5"
+        android:text="@string/editDeckButton_Text"
+        android:translationY="40dp" />
+
+    <Button
+        android:id="@+id/deleteDeckButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_weight="5"
+        android:text="@string/deleteDeckButton" />
+
+</LinearLayout>

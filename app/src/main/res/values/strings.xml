@@ -1,6 +1,41 @@
 <resources>
     <string name="app_name">FlashCardApp</string>
-    <string name="textView_Title">Title</string>
-    <string name="addCardButton_onClick">click</string>
+    <string name="DeckListTitle_Title">My Decks</string>
+    <string name="addDeckButton_onClick">click</string>
+    <string name="addDeckButton_Text">Add Deck</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editDeckInputText" />
+    <string name="collectionNameText" />
     <string name="addCardButton_Text">Add Card</string>
+    <string name="showCardText" />
+    <string name="showCardButton_text">Show Cards</string>
+    <string name="DeckTitle_Title">Card List</string>
+    <string name="frontTextView_Text">Front Text:</string>
+    <string name="addFrontTextInput_Text" />
+    <string name="addBackTextInput_Text" />
+    <string name="backTextView_Text">Back Text:</string>
+    <string name="saveCardButton_Text"> Save Card </string>
+    <string name="reviewDeckButton_Text">Review Deck</string>
+    <string name="showBackButton_Text">Show Back</string>
+    <string name="reviewFrontTextView_Text" />
+    <string name="reviewBackTextView_Text" />
+    <string name="stopReviewButton_Text">Stop Reviewing</string>
+    <string name="reviewNextButton_Text">Next Card</string>
+    <string name="editCardButton_Text">Edit Card </string>
+    <string name="editBackTextInput_Text" />
+    <string name="editFrontTextInput_Text" />
+    <string name="deleteCardButton_Text">Delete Card</string>
+    <string name="deckTextView_Text">Deck Name:</string>
+    <string name="editDeckTextInput_Text" />
+    <string name="editDeckButton_Text">Edit Deck</string>
+    <string name="deleteDeckButton">Delete Deck</string>
+    <string name="editCurrentDeckButton_Text">Edit Deck</string>
+    <string name="addDeckInputText_HintText">type here</string>
+    <string name="loginTitle_text">FlashCardApp</string>
+    <string name="loginButton_Text">Log In</string>
+    <string name="usernameEditText_Text" />
+    <string name="passwordEditText_Text" />
+    <string name="loginSubtitle_Text">Please log in to continue</string>
+
 </resources>
